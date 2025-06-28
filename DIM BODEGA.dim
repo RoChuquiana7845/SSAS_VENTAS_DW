@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="28cb8b14-8d10-4a3a-9c80-91709a588142" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a5da5175-9170-4b35-8122-a32e3659b6fd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>DIM BODEGA</ID>
   <Name>DIM BODEGA</Name>
   <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
@@ -95,33 +95,33 @@
   </Annotations>
   <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="59489c44-59a7-4e3c-b718-95d17e56a409">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7aa9590b-2a84-4389-a14b-3f581cbca129">
     <DataSourceViewID>DM VENTAS</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="84710a8d-20cc-4605-bb3d-3f640f3905a9">
+  <ErrorConfiguration dwd:design-time-name="29071a5a-1509-4788-86a0-4f414511b22f">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="66e22567-1959-4096-9be1-1814a8cc0473">
+    <Attribute dwd:design-time-name="8c02de04-40db-4d1a-b642-2a406d34945e">
       <ID>Bodega ID</ID>
       <Name>Bodega ID</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="44c241b6-06ef-4030-bed0-bdd020cabe80">
+        <KeyColumn dwd:design-time-name="20848b88-298f-48d9-b5e2-39ee188f4047">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd787238-a144-4558-8f6c-0891abb8373d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0bf45751-a8df-43af-a4fb-8d87efae2f76">
             <TableID>dbo_DIM_BODEGA</TableID>
             <ColumnID>BodegaID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="1873247a-5abb-4425-abad-0123d64cda82">
+        <AttributeRelationship dwd:design-time-name="c1a130ff-09d0-423c-bb80-af711612126c">
           <AttributeID>Nombre</AttributeID>
           <Name>Nombre</Name>
         </AttributeRelationship>
@@ -130,20 +130,28 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b410d8e9-62f4-48ce-8477-4ccdba04a800">
+    <Attribute dwd:design-time-name="872dbbaf-4e18-41ac-b91f-e39e595bfb2f">
       <ID>Nombre</ID>
       <Name>Nombre</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="bac4aeb3-4ede-4590-8f2c-69d8675af318">
+        <KeyColumn dwd:design-time-name="278486de-3dd9-4d14-b225-e54b9d3d263b">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ddb4037-f9c7-4d9d-90f7-6e8036d42c7d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4be910a-39eb-4c21-91a8-85823d431cd4">
             <TableID>dbo_DIM_BODEGA</TableID>
             <ColumnID>BodegaID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="93b6c596-9cd8-401a-ae33-eaf88eebd3f5">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="69313ebb-bb9c-42fe-ad3f-4b2432eda501">
+          <TableID>dbo_DIM_BODEGA</TableID>
+          <ColumnID>Nombre</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="97ca2065-ca28-42a7-bfda-ac097b3f35ea">
+        <AttributeRelationship dwd:design-time-name="11bdc072-58ca-44e5-827a-12b1dde08471">
           <AttributeID>Sucursal</AttributeID>
           <Name>Sucursal</Name>
         </AttributeRelationship>
@@ -153,18 +161,26 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9cbaf004-b100-4916-b349-a5a68682f3d1">
+    <Attribute dwd:design-time-name="9e27db37-9b7f-4f3f-9e4d-82dbad1bb213">
       <ID>Sucursal</ID>
       <Name>Sucursal</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="712eb130-6c9f-40b7-ae6d-83c7db5e6ccf">
+        <KeyColumn dwd:design-time-name="f7a6b080-bd84-4894-aefd-aa8ff40974cc">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e4cade9f-8505-4cd8-b18e-65944bdd16f8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="56c977ed-c8fe-45e1-b138-af071fd762c4">
             <TableID>dbo_DIM_BODEGA</TableID>
             <ColumnID>BodegaID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="f102eb95-0ac2-44ed-a8d1-09e85cc0459d">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="534de091-3280-47c3-aa71-04613eac2efd">
+          <TableID>dbo_DIM_BODEGA</TableID>
+          <ColumnID>Sucursal</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -172,16 +188,16 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="b6d55410-6f40-40b0-b678-da7e44500853">
+    <Hierarchy dwd:design-time-name="0283d801-3d03-4dd3-a05f-df627c447280">
       <ID>Hierarchy</ID>
       <Name>Ubicacion</Name>
       <Levels>
-        <Level dwd:design-time-name="edce61f4-ffb9-4e50-a0f2-353c6dfeef24">
+        <Level dwd:design-time-name="72896bd3-dc4b-446a-b86f-abc130122dc3">
           <ID>Sucursal</ID>
           <Name>Sucursal</Name>
           <SourceAttributeID>Sucursal</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="57b7289e-89fd-4006-a686-f5673bece08b">
+        <Level dwd:design-time-name="9150e44b-481b-4f8e-809b-ffb1750d8391">
           <ID>Nombre</ID>
           <Name>Nombre</Name>
           <SourceAttributeID>Nombre</SourceAttributeID>
